@@ -22,6 +22,17 @@ M.ui = {
   },
 }
 
+M.term = {
+  float = {
+    relative = "editor",
+    row = 0.1,       -- Vertical position offset from top (0.1 = 10%)
+    col = 0.05,      -- Horizontal position offset from left
+    width = 0.9,     -- Width of the terminal window (0.9 = 90%)
+    height = 0.8,    -- Height of the terminal window (0.8 = 80%)
+    border = "single",
+  },
+}
+
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {
