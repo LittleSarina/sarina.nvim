@@ -6,21 +6,27 @@
 local M = {}
 
 M.base46 = {
-  theme = "tokyonight",
+  theme = "decay",
 
   hl_override = {
-    Comment = { italic = true },
+    Type = { bold = true, italic = false },
+    -- Comment = { italic = true },
     ["@comment"] = { italic = true },
+
+    --- https://neovim.io/doc/user/treesitter.html#treesitter-highlight-groups
+    ["@keyword"] = { italic = true },
+    ["@function.method"] = { italic = true },
+    ["@function.method.call"] = { bold = true }
   },
 }
 
-M.ui = {
-  hl_override = {
-    St_NormalMode = { bg = "#31748f" }, -- Rosé Pine 'foam' (cyan/blue accent)
-    St_NormalModeSep = { fg = "#31748f" }, -- Rosé Pine 'foam'
-    TbLineFill = { bg = "#191724" }, -- Rosé Pine 'base' background
-  },
-}
+-- M.ui = {
+--   hl_override = {
+--     St_NormalMode = { bg = "#31748f" }, -- Rosé Pine 'foam' (cyan/blue accent)
+--     St_NormalModeSep = { fg = "#31748f" }, -- Rosé Pine 'foam'
+--     TbLineFill = { bg = "#191724" }, -- Rosé Pine 'base' background
+--   },
+-- }
 
 M.term = {
   float = {
