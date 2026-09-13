@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     -- css = { "prettier" },
     -- html = { "prettier" },
+      cs = { "csharpier" },
   },
 
   -- format_on_save = {
@@ -10,6 +11,7 @@ local options = {
   --   timeout_ms = 500,
   --   lsp_fallback = true,
   -- },
+  
 }
 
 return options
