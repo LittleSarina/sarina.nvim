@@ -50,6 +50,10 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 map("n", "<F5>", "<Cmd>lua require'dap'.continue()<CR>", opts)
+-- Shift + F5
+map("n", "<F17>", "<Cmd>lua require'dap'.terminate()<CR><Cmd>lua require'dapui'.close()<CR>", opts)
+-- Ctrl + F5
+map("n", "<F29>", "<Cmd>lua require'dap'.restart()<CR>", opts)
 map("n", "<F6>", "<Cmd>lua require('neotest').run.run({strategy = 'dap'})<CR>", opts)
 map("n", "<F9>", "<Cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
 map("n", "<F10>", "<Cmd>lua require'dap'.step_over()<CR>", opts)

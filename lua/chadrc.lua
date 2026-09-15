@@ -2,11 +2,12 @@
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
 -- Please read that file to know all available options :(
 
+-- NOTE: I Should put this on gitignore
 ---@type ChadrcConfig
 local M = {}
 
 M.base46 = {
-  theme = "decay",
+  theme = "catppuccin",
 
   hl_override = {
     Type = { bold = true, italic = false },
