@@ -1,20 +1,33 @@
+-- NOTE: figure out why the hell those things are not installing
 return {
   {
     "williamboman/mason.nvim",
+    Lazy = false,
     opts = {
       ensure_installed = {
+        -- General purpose
+        "prettier",
+
+        -- Lua
         "lua-language-server",
+        "stylua",
+
+        -- C#
         "csharp-language-server",
         "xmlformatter",
         "roslyn_ls",
-        "stylua",
         "bicep-lsp",
+        "netcoredbg",
+
+        -- General frontend
         "html-lsp",
         "css-lsp",
         "csharpier",
-        "prettier",
+
+
+        -- Config files
+        "tombi",
         "json-lsp",
-        "netcoredbg",
       },
     },
   },
